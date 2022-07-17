@@ -8,7 +8,7 @@ int main(int argc,string argv[]){
     if(argc ==2){
 
         for(int i = 0, n = strlen(argv[1]); i<n;i++ ){
-            if(isdigit(argv[1][i] || argv[1][i] <=0)){ // Check if the key is a int, positive;
+            if(!isdigit(argv[1][i])){ // Check if the key is a int;
                 printf("Usage: ./caesar key\n");
                 return 1;
             }
